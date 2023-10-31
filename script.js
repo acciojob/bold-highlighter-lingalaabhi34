@@ -1,12 +1,21 @@
-function highlight() {
-    //Write your code here
 
+function highlight() {
+  //Write your code here
+
+const bold = document.getElementsByTagName("strong");
+for(let i=0;i<bold.length;i++){
+  bold[i].style.color = "green";
+}
 
 }
 
 
 function return_normal() {
-    //Write your code here
+  //Write your code here
 
-    
+  const boldElements = document.getElementsByTagName("strong");
+
+    for (let i = 0; i < boldElements.length; i++) {
+        boldElements[i].style.color = "black";
+    }
 }
